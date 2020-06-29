@@ -11,7 +11,7 @@
 /proc/gameTimestamp(format = "hh:mm:ss", wtime=null)
 	if(!wtime)
 		wtime = world.time
-	return time2text(wtime - GLOB.timezoneOffset, format)
+	return time2text(wtime, format)
 
 /// Returns the station time in deciseconds
 /proc/station_time(display_only = FALSE, wtime=world.time)
